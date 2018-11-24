@@ -6,10 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hellotomcat-api" />
-        <module name="hellotomcat-api-impl" />
-        <module name="hellotomcat-webapp" />
+        <module name="console" />
+        <module name="data" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="9">
+      <module name="console" target="9" />
+      <module name="data" target="9" />
+      <module name="math" target="9" />
+      <module name="service" target="9" />
+    </bytecodeTargetLevel>
   </component>
 </project>
