@@ -22,7 +22,7 @@ public class AverageServiceImpl implements AverageService {
 
     }
         @Override
-    public Integer[] getMode(int[] inputData){
+    public int[] getMode(int[] inputData){
         int[] countArr = new int[inputData.length];
 
         int max=1;
@@ -50,7 +50,8 @@ public class AverageServiceImpl implements AverageService {
                 outputList.add(inputData[i]);
             }
         }
-        Integer[] out = outputList.toArray(new Integer[outputList.size()]);
+        //int[] out = (int[])outputList.toArray(int[outputList.size()]);
+            int[] out = outputList.stream().mapToInt(i -> i).toArray();
         return out;
     }
 
@@ -68,7 +69,8 @@ public class AverageServiceImpl implements AverageService {
         }
         else {
             int m = inputData.length/2;
-            median = (inputData[m-1]+inputData[m])/2;
+            median = (inputData[m-1]+inputData[m])/2.;
+
         }
 
     return median;
