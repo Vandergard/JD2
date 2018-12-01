@@ -58,6 +58,12 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>only_Test</id>
+            <modules>
+                <module>service</module>
+            </modules>
+        </profile>
     </profiles>
 
     <dependencyManagement>

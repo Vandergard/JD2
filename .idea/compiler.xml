@@ -12,10 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
-      <module name="console" target="9" />
-      <module name="data" target="9" />
-      <module name="math" target="9" />
-      <module name="service" target="9" />
+      <module name="console" target="1.5" />
+      <module name="data" target="1.5" />
+      <module name="math" target="1.5" />
+      <module name="service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
